@@ -11,6 +11,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+var port = Number(process.env.PORT || 5000);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -57,7 +58,9 @@ res.render('index',
   { title : 'Home' }
   )
 })
-app.listen(3000);
+app.listen(port,function(){
+	console.log('Listening on :'+port);
+});
 
 // production error handler
 // no stacktraces leaked to user
