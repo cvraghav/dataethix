@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .header 
+     .navbar
+      .navbar-inner
+       ul.nav
+        li <a href="/teams">Teams</a>
+        li <a href="/schedule">Schedule</a>
+        li <a href="/grounds">Grounds</a>
+        li <a href="/standings">Standings</a>
+        li <a href="/rules">Rules</a>
+        li <a href="/board">Board</a>
+        li <a href="/links">Links</a>
+        li <a href="/admin">Administration</a>
+    .container
+      .main-content
+        block content
+      .sidebar
+        block sidebar
+    footer
+      p Running on node with Express, Jade and Stylus

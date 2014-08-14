@@ -19,61 +19,26 @@ global-reset()
  */
 main-color = #fa5b4d
 background-color = #faf9f0
-main-hover-color = black;
 
 body
   font-family 'Georgia'
+  background-color background-color
   color #444
 
-.header
-  //font-family 'Quicksand'
-  padding 5px 10px
-  color #660000
-  //font-size 12px
-  text-align left
-  zoom 1
-  display block
-  
+header
+  font-family 'Quicksand'
+  padding 50px 10px
+  color #fff
+  font-size 25px
+  text-align center
+
   /*
    * Note the use of the `main-color`
    * variable and the `darken` function
    */
-  //background-color #272C6B 
-  //border-bottom 1px solid #413CA6
-  //text-shadow 0px -1px 0px darken(main-color, 30%)
-
-.navbar
-  margin-bottom 0px
-  
-.navbar-inner
-  display table
-  .nav
-    position relative
-    left 0
-    display block
-    float left
-    margin 10px 10px 0 0
-    .ul
-      padding 0
-      margin 0 0 10px 25px
-      display inline
-      .li 
-      display inline
-    
-      .a
-        font 12px/1.4 "Lucida Grande", Arial, sans-serif
-        background black
-        color #ccc
-
-ul li
-  display inline      
-
-ul li a
-  float none
-  padding 10px 15px 10px
-  color #777
-  text-decoration none
-  text-shadow 0 1px 0 #fff
+  background-color main-color
+  border-bottom 1px solid darken(main-color, 30%)
+  text-shadow 0px -1px 0px darken(main-color, 30%)
 
 .container
   width 500px
@@ -83,15 +48,6 @@ ul li a
 .main-content
   float left
   width 300px
-  
-  h5
-    font-size 80px
-  
-  h4
-    font-size 60px
-
-  h3
-    font-size 40px
 
   p
     margin-bottom 20px
@@ -128,9 +84,6 @@ ul li a
 
 p
   line-height 1.8
-
-h5
-  font-size 65pt
 
 footer
   width 500px

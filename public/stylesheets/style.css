@@ -105,22 +105,53 @@ a img {
  */
 body {
   font-family: 'Georgia';
-  background-color: #faf9f0;
   color: #444;
 }
-header {
-  font-family: 'Quicksand';
-  padding: 50px 10px;
-  color: #fff;
-  font-size: 25px;
-  text-align: center;
+.header {
+  padding: 5px 10px;
+  color: #600;
+  text-align: left;
+  zoom: 1;
+  display: block;
 /*
    * Note the use of the `main-color`
    * variable and the `darken` function
    */
-  background-color: #fa5b4d;
-  border-bottom: 1px solid #df1806;
-  text-shadow: 0px -1px 0px #df1806;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+.navbar-inner {
+  display: table;
+}
+.navbar-inner .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 10px 10px 0 0;
+}
+.navbar-inner .nav .ul {
+  padding: 0;
+  margin: 0 0 10px 25px;
+  display: inline;
+}
+.navbar-inner .nav .ul .li,
+.navbar-inner .nav .ul display inline,
+.navbar-inner .nav .ul .a {
+  font: 12px/1.4 "Lucida Grande", Arial, sans-serif;
+  background: #000;
+  color: #ccc;
+}
+ul li {
+  display: inline;
+}
+ul li a {
+  float: none;
+  padding: 10px 15px 10px;
+  color: #777;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
 }
 .container {
   width: 500px;
@@ -130,6 +161,15 @@ header {
 .main-content {
   float: left;
   width: 300px;
+}
+.main-content h5 {
+  font-size: 80px;
+}
+.main-content h4 {
+  font-size: 60px;
+}
+.main-content h3 {
+  font-size: 40px;
 }
 .main-content p {
   margin-bottom: 20px;
@@ -168,6 +208,9 @@ header {
 }
 p {
   line-height: 1.8;
+}
+h5 {
+  font-size: 65pt;
 }
 footer {
   width: 500px;
