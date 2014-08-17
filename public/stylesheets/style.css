@@ -112,14 +112,32 @@ body {
   color: #600;
   text-align: left;
   zoom: 1;
+  height: 70px;
   display: block;
 /*
    * Note the use of the `main-color`
    * variable and the `darken` function
    */
 }
-.navbar {
-  margin-bottom: 0px;
+.title {
+  font-size: 10px;
+  font-style: normal;
+  padding: 17px 40px 0px 18px;
+  z-index: 20;
+  float: left;
+}
+.title .img {
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+.navba {
+  position: relative;
+  margin: 0px 0px 0px 200px;
+  text-align: right;
+  z-index: 20;
+  padding: 2px 0px 0px 450px;
 }
 .navbar-inner {
   display: table;
@@ -171,6 +189,9 @@ ul li a {
 .main-content h3 {
   font-size: 40px;
 }
+.main-content h1 {
+  font-size: 13px;
+}
 .main-content p {
   margin-bottom: 20px;
 }
@@ -218,4 +239,53 @@ footer {
   border-top: 1px dotted #ccc;
   padding-top: 5px;
   font-size: 13px;
+}
+l-box {
+  display: block;
+  border: 1px #ddd solid;
+  background-color: #f6f6f6;
+}
+l-box-inner {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+  display: block;
+  padding-left: 18px;
+  margin-bottom: 18px;
+  margin-top: 18px;
+  margin-right: 10px;
+}
+l-section {
+  display: block;
+  margin-top: 25px;
+}
+l-row {
+  display: table;
+  line-height: 0;
+  width: 100%;
+}
+label {
+  display: block;
+  padding-left: 2px;
+  padding-bottom: 14px;
+  font-weight: bold;
+}
+l-column1 {
+  float: left;
+}
+l-column2 {
+  float: right;
+}
+input {
+  padding: 3px 7px;
+  height: 15px;
+  width: 80%;
+}
+button {
+  margin-top: 1px;
+  width: 85%;
+}
+btn {
+  margin-top: 1px;
+  width: 85%;
 }
